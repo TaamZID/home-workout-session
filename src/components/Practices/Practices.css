@@ -1,6 +1,7 @@
 .practice-container {
   display: grid;
   grid-template-columns: 4fr 1fr;
+  background-color: rgb(182, 177, 170);
 }
 
 .exercises-container {
@@ -10,6 +11,6 @@
   margin: 100px 50px;
 }
 
-.cart-container{
-  background-color: rgba(255, 153, 0, 0.3);
+.cart-container {
+  background-color: rgb(211, 192, 192);
 }

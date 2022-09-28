@@ -3,36 +3,36 @@
     "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
     "name": "Bodyweight Squats",
     "img": "https://cdn.shopify.com/s/files/1/0269/5551/3900/files/Bodyweight-Squat_600x600.png?v=1653577860",
-    "time": "20"
+    "time": 20
   },
   {
     "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
     "name": "Push Ups",
     "img": "https://phantom-marca.unidadeditorial.es/efa9740df47cff7f9466ea78fd720074/crop/0x93/899x599/resize/1320/f/jpg/assets/multimedia/imagenes/2022/01/19/16426036798831.jpg",
-    "time": "10"
+    "time": 10
   },
   {
     "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
     "name": "Walking Lunges",
     "img": "https://static.vecteezy.com/system/resources/previews/006/417/771/original/man-doing-dumbbell-walking-lunges-exercise-flat-illustration-isolated-on-white-background-free-vector.jpg",
-    "time": "10"
+    "time": 10
   },
   {
     "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
     "name": "Dumbbell Rows",
     "img": "https://www.crossfit.com/wp-content/uploads/2019/04/03111458/Bent-Over-Row-Collage-1024x576.png",
-    "time": "10"
+    "time": 10
   },
   {
     "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
     "name": "Planks",
     "img": "https://barbend.com/wp-content/uploads/2019/01/BarBend-Feature-Image-1200-x-675-2021-06-02T165505.056.jpg",
-    "time": "15"
+    "time": 15
   },
   {
     "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
     "name": "Jumping Jacks",
     "img": "https://www.researchgate.net/profile/Mohammed-Abou-Elmagd/publication/341734848/figure/fig1/AS:896516470362114@1590757591713/Sample-of-Jumping-Jacks-Exercise-4.png",
-    "time": "30"
+    "time": 30
   }
 ]

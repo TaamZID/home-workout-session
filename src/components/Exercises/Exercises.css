@@ -1,14 +1,14 @@
 .practice {
   width: 300px;
-  height: 510px;
-  border: 1px solid #95a0a7;
+  height: 350px;
+  border: 1px solid #0d0e0e;
   border-radius: 8px;
   position: relative;
 }
 
 .practice img {
   width: 286px;
-  height: 286px;
+  height: 186px;
   border-radius: 8px;
   margin: 7px;
 }
@@ -33,7 +33,7 @@
 
 .btn-exercise {
   width: 100%;
-  background: #ffe0b3;
+  background: #d4d0ca;
   border: none;
   border-radius: 0px 0px 8px 8px;
   position: absolute;
@@ -43,8 +43,8 @@
   justify-content: center;
 }
 
-.btn-exercise .btn-text{
-    margin-right: 5px;
+.btn-exercise .btn-text {
+  margin-right: 5px;
 }
 
 .btn-exercise:hover {
