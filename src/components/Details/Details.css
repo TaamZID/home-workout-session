@@ -4,3 +4,8 @@
   margin-left: 28px;
   margin-top: 28px;
 }
+
+.break button {
+  border-radius: 70%;
+  margin: 2px;
+}
