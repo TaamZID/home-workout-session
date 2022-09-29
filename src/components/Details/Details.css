@@ -8,3 +8,7 @@
 .break button {
   margin: 2px;
 }
+
+.btn-exercise:hover {
+  background-color: rgb(167, 137, 82);
+}

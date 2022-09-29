@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Details.css";
 
 const Details = ({ cart }) => {
   const [cnt, setBreak] = useState(0);
+
+  useEffect(() => {
+    const localData = localStorage.getItem("time");
+    if (localData) {
+      setBreak(localData);
+    }
+    console.log(localData);
+  }, [cnt]);
 
   let total = 0;
   let quantity = 0;
@@ -14,10 +22,12 @@ const Details = ({ cart }) => {
   return (
     <div className="details">
       <div>
+        <h2>MD TAMZIDUL ALAM</h2>
         <h3>Add a break</h3>
         <div className="break">
           <button
             onClick={() => {
+              localStorage.setItem("time", JSON.stringify(cnt));
               setBreak(10);
             }}
           >
@@ -25,6 +35,7 @@ const Details = ({ cart }) => {
           </button>
           <button
             onClick={() => {
+              localStorage.setItem("time", JSON.stringify(cnt));
               setBreak(20);
             }}
           >
@@ -32,6 +43,7 @@ const Details = ({ cart }) => {
           </button>
           <button
             onClick={() => {
+              localStorage.setItem("time", JSON.stringify(cnt));
               setBreak(30);
             }}
           >
@@ -39,6 +51,7 @@ const Details = ({ cart }) => {
           </button>
           <button
             onClick={() => {
+              localStorage.setItem("time", JSON.stringify(cnt));
               setBreak(40);
             }}
           >
@@ -46,6 +59,7 @@ const Details = ({ cart }) => {
           </button>
           <button
             onClick={() => {
+              localStorage.setItem("time", JSON.stringify(cnt));
               setBreak(50);
             }}
           >
@@ -56,6 +70,9 @@ const Details = ({ cart }) => {
       <h2>Exercise Details</h2>
       <h4>Exercise Time: {total}s</h4>
       <h4>Break Time: {cnt}s</h4>
+      <button className="">
+        Activity Completed
+      </button>
     </div>
   );
 };

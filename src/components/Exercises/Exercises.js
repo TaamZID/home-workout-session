@@ -18,7 +18,6 @@ const Exercises = (props) => {
         className="btn-exercise"
       >
         <p className="btn-text">Add to Details</p>
-        {/* <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon> */}
       </button>
     </div>
   );

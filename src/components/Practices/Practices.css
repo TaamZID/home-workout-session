@@ -7,10 +7,20 @@
 .exercises-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 45px;
-  margin: 100px 50px;
+  gap: 15px;
+  margin: 25px 50px;
 }
 
 .cart-container {
   background-color: rgb(211, 192, 192);
 }
+
+@media only screen and (max-width: 600px) {
+  .exercises-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .practice-container {
+    display: grid;
+    grid-template-columns: none;
+    margin-bottom
