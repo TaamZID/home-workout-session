@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
 import "./Details.css";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactnToastify.css";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactnToastify.css";
 
 const Details = ({ cart }) => {
   const [cnt, setBreak] = useState(0);
 
-  const notify = () => toast("Wow so easy!");
+  // const notify = () => toast("Wow so easy!");
 
   useEffect(() => {
     const localData = localStorage.getItem("time");
     if (localData) {
       setBreak(localData);
+    } else {
+      setBreak(0);
     }
-    console.log(localData);
-  }, [cnt]);
+  }, []);
 
   let total = 0;
   let quantity = 0;
@@ -31,11 +32,11 @@ const Details = ({ cart }) => {
         <br />
         <br />
         <br />
-        <h3>Add a break</h3>
+        <h3>Add a break <small>(Please double click on button)</small></h3>
         <div className="break">
           <button
             onClick={() => {
-              localStorage.setItem("time", JSON.stringify(cnt));
+              localStorage.setItem("time", cnt);
               setBreak(10);
             }}
           >
@@ -43,7 +44,7 @@ const Details = ({ cart }) => {
           </button>
           <button
             onClick={() => {
-              localStorage.setItem("time", JSON.stringify(cnt));
+              localStorage.setItem("time", cnt);
               setBreak(20);
             }}
           >
@@ -51,7 +52,7 @@ const Details = ({ cart }) => {
           </button>
           <button
             onClick={() => {
-              localStorage.setItem("time", JSON.stringify(cnt));
+              localStorage.setItem("time", cnt);
               setBreak(30);
             }}
           >
@@ -59,31 +60,21 @@ const Details = ({ cart }) => {
           </button>
           <button
             onClick={() => {
-              localStorage.setItem("time", JSON.stringify(cnt));
+              localStorage.setItem("time", cnt);
               setBreak(40);
             }}
           >
             40s
-          </button>
-          <button
-            onClick={() => {
-              localStorage.setItem("time", JSON.stringify(cnt));
-              setBreak(50);
-            }}
-          >
-            50s
           </button>
         </div>
       </div>
       <h2>Exercise Details</h2>
       <h4>Exercise Time: {total}s</h4>
       <h4>Break Time: {cnt}s</h4>
-      <button onClick={notify} className="">
-        Activity Completed
-      </button>
+      <button>Activity Completed</button>
 
       <br />
-      <ToastContainer />
+      {/* <ToastContainer /> */}
     </div>
   );
 };
