@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Exercises from "../Exercises/Exercises";
 import Details from "../Details/Details";
 import "./Practices.css";
+import { addToDb } from "../../utilities/fakedb";
 
 const Practices = () => {
   const [exercises, setExercises] = useState([]);
@@ -17,6 +18,7 @@ const Practices = () => {
     console.log(exercise);
     const newCart = [...cart, exercise];
     setCart(newCart);
+    addToDb(exercise.id);
   };
   return (
     <div className="practice-container">

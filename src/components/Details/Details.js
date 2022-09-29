@@ -11,9 +11,8 @@ const Details = ({ cart }) => {
 
   return (
     <div className="details">
-      <h4>Exercise Details</h4>
       <div>
-        <h4>Add a break</h4>
+        <h3>Add a break</h3>
         <div className="break">
           <button
             onClick={() => {
@@ -52,6 +51,7 @@ const Details = ({ cart }) => {
           </button>
         </div>
       </div>
+      <h2>Exercise Details</h2>
       <h4>Exercise Time: {total}s</h4>
       <h4>Break Time: {cnt}s</h4>
     </div>
