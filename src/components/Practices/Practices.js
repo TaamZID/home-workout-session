@@ -30,7 +30,18 @@ const Practices = () => {
 
   const handleAddToDetails = (exercise) => {
     console.log(exercise);
-    const newCart = [...cart, exercise];
+    let newCart = [];
+    const exists = cart.find(exer => exer.id === exercise.id)
+    if(!exists){
+      exercise.quantity = 1;
+      newCart = [...cart, exercise];
+    }
+    else{
+      const rest = cart.filter(exer => exer.id !== exercise.id)
+      exists.quantity = exists.quantity+1;
+      newCart = [...rest, exists];
+    }
+    
     setCart(newCart);
     addToDb(exercise.id);
   };

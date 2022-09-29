@@ -5,8 +5,10 @@ const Details = ({ cart }) => {
   const [cnt, setBreak] = useState(0);
 
   let total = 0;
+  let quantity = 0;
   for (const exercise of cart) {
-    total = parseFloat(total + exercise.time);
+    quantity = quantity + exercise.quantity;
+    total = parseFloat(total + exercise.time * exercise.quantity);
   }
 
   return (
