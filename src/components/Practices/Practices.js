@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Exercises from "../Exercises/Exercises";
 import Details from "../Details/Details";
 import "./Practices.css";
-import { addToDb } from "../../utilities/fakedb";
+import { addToDb, getStoredCart } from "../../utilities/fakedb";
 
 const Practices = () => {
   const [exercises, setExercises] = useState([]);
@@ -13,6 +13,20 @@ const Practices = () => {
       .then((res) => res.json())
       .then((data) => setExercises(data));
   }, []);
+
+  useEffect(() => {
+    const storedCart = getStoredCart();
+    const savedExercise = [];
+    for (const id in storedCart) {
+      const addedExercise = exercises.find((exercise) => exercise.id === id);
+      if (addedExercise) {
+        const quantity = storedCart[id];
+        addedExercise.quantity = quantity;
+        savedExercise.push(addedExercise);
+      }
+    }
+    setCart(savedExercise);
+  }, [exercises]);
 
   const handleAddToDetails = (exercise) => {
     console.log(exercise);
