@@ -3,7 +3,7 @@ import "./Exercises.css";
 
 const Exercises = (props) => {
   const { name, img, time } = props.exercise;
-  
+
   return (
     <div className="practice">
       <img src={img} alt="" />

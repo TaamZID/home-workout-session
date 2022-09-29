@@ -13,6 +13,7 @@
 
 .cart-container {
   background-color: rgb(211, 192, 192);
+  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -23,4 +24,5 @@
   .practice-container {
     display: grid;
     grid-template-columns: none;
-    margin-bottom
+  }
+}

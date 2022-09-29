@@ -1,0 +1,15 @@
+.question-container {
+  /* margin-left: 50px;
+  margin-right: 80px; */
+  background-color: rgb(182, 177, 170);
+}
+
+.answer {
+  margin-left: 50px;
+  margin-right: 300px;
+}
+
+* {
+  margin: 0;
+  /* padding: 0; */
+}
